@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <span style="flex: 1 1 auto;">EcoTrack</span>
+
+  <button mat-button routerLink="/" *ngIf="isLoggedIn">Inicio</button>
+  <button mat-button routerLink="/habits" *ngIf="isLoggedIn">Hábitos</button>
+  <button mat-button routerLink="/profile" *ngIf="isLoggedIn">Mi perfil</button>
+  <button mat-button (click)="logout()" *ngIf="isLoggedIn">Cerrar sesión</button>
+
+  <button mat-button routerLink="/login" *ngIf="!isLoggedIn">Iniciar sesión</button>
+  <button mat-button routerLink="/register" *ngIf="!isLoggedIn">Registrarse</button>
+</mat-toolbar>

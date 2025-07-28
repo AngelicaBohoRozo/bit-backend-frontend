@@ -1,0 +1,28 @@
+<h2>Mis hábitos registrados</h2>
+
+<div *ngIf="habitos.length > 0; else noHabitos">
+  <mat-card *ngFor="let habito of habitos" class="habit-card" style="margin-bottom: 10px;">
+    <mat-card-title>{{ habito.nombre }}</mat-card-title>
+    <mat-card-subtitle>
+      Categoría: {{ habito.categoria }} | Frecuencia: {{ habito.frecuencia }}
+    </mat-card-subtitle>
+    <mat-card-content>
+      <p>{{ habito.descripcion || 'Sin descripción' }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-icon-button color="warn" (click)="eliminarHabito(habito._id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<ng-template #noHabitos>
+  <div style="text-align: center; margin-top: 40px;">
+    <mat-icon style="font-size: 48px; color: gray;">emoji_nature</mat-icon>
+    <p style="margin-top: 10px;">No has registrado ningún hábito todavía.</p>
+    <button mat-raised-button color="primary" (click)="irACrearHabito()">
+  Crear hábito
+</button>
+  </div>
+</ng-template>

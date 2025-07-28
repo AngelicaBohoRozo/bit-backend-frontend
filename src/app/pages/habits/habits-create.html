@@ -1,0 +1,37 @@
+<h2>Registrar nuevo hábito</h2>
+
+<form (ngSubmit)="crearHabito()" style="max-width: 500px; margin: auto;">
+  <mat-form-field appearance="outline" style="width: 100%;">
+    <mat-label>Nombre del hábito</mat-label>
+    <input matInput [(ngModel)]="nuevoHabito.nombre" name="nombre" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" style="width: 100%;">
+    <mat-label>Descripción</mat-label>
+    <textarea matInput [(ngModel)]="nuevoHabito.descripcion" name="descripcion"></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" style="width: 100%;">
+    <mat-label>Categoría</mat-label>
+    <mat-select [(ngModel)]="nuevoHabito.categoria" name="categoria" required>
+      <mat-option value="hogar">Hogar</mat-option>
+      <mat-option value="transporte">Transporte</mat-option>
+      <mat-option value="alimentación">Alimentación</mat-option>
+      <mat-option value="reciclaje">Reciclaje</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" style="width: 100%;">
+    <mat-label>Frecuencia</mat-label>
+    <mat-select [(ngModel)]="nuevoHabito.frecuencia" name="frecuencia" required>
+      <mat-option value="diario">Diario</mat-option>
+      <mat-option value="semanal">Semanal</mat-option>
+      <mat-option value="mensual">Mensual</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+    <button mat-raised-button color="primary" type="submit">Guardar hábito</button>
+    <button mat-button type="button" (click)="volverAMisHabitos()">Cancelar</button>
+  </div>
+</form>

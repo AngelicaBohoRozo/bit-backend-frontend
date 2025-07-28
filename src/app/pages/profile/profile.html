@@ -1,0 +1,15 @@
+<mat-card>
+  <h2>Mi Perfil</h2>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Nombre</mat-label>
+    <input matInput [(ngModel)]="nombre">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="email">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="guardarPerfil()">Guardar</button>
+</mat-card>

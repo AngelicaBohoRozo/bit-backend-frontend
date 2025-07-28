@@ -1,0 +1,40 @@
+<div class="habits-create-container">
+  <h2>Registrar nuevo hábito</h2>
+
+  <mat-card class="habit-form-card">
+    <form>
+      <mat-form-field appearance="fill">
+        <mat-label>Nombre del hábito</mat-label>
+        <input matInput [(ngModel)]="nombre" name="nombre" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Descripción</mat-label>
+        <textarea matInput [(ngModel)]="descripcion" name="descripcion"></textarea>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Categoría</mat-label>
+        <mat-select [(ngModel)]="categoria" name="categoria" required>
+          <mat-option value="Salud">Salud</mat-option>
+          <mat-option value="Medio ambiente">Medio ambiente</mat-option>
+          <mat-option value="Educación">Educación</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Frecuencia</mat-label>
+        <mat-select [(ngModel)]="frecuencia" name="frecuencia" required>
+          <mat-option value="Diario">Diario</mat-option>
+          <mat-option value="Semanal">Semanal</mat-option>
+          <mat-option value="Mensual">Mensual</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="botones">
+        <button mat-raised-button color="accent" (click)="agregarHabito()">Registrar hábito</button>
+        <button mat-button type="button" (click)="irAMisHabitos()">Cancelar</button>
+      </div>
+    </form>
+  </mat-card>
+</div>
