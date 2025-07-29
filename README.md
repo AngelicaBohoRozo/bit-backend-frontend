@@ -1,59 +1,26 @@
-# EcoTrackFrontend
+# 🪴 EcoTrack - bit-backend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.1.
+**Nombre completo:** Angelica Bohorquez Rozo  
+**Entrega 5:** BIT-BACKEND  
 
-## Development server
+**Tecnologías usadas:** 
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- Postman
+- Angular CLI
 
-To start a local development server, run:
+---
+## 📌 Descripción
 
-```bash
-ng serve
-```
+**EcoTrack** es una API RESTful desarrollada con Node.js y Express, conectada a una base de datos MongoDB Atlas. Permite registrar hábitos sostenibles diarios como:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Duchas de menos de 5 minutos 🚿  
+- Uso de bicicleta o transporte público 🚲  
+- Rechazo de bolsas plásticas ♻️  
 
-## Code scaffolding
+Además, permite manejar usuarios y más adelante incluirá retos semanales y estadísticas.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+Autor: Angélica Bohorquez Rozo
