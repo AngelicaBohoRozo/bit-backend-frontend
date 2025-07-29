@@ -1,7 +1,7 @@
-# 🪴 EcoTrack - bit-backend
+# 🪴 EcoTrack - bit-frontend
 
 **Nombre completo:** Angelica Bohorquez Rozo  
-**Entrega 5:** BIT-BACKEND  
+**Entrega 6:** BIT-BACKEND  
 
 **Tecnologías usadas:** 
 - Node.js
