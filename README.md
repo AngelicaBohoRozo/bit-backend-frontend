@@ -1,4 +1,4 @@
-# 🪴 EcoTrack - bit-frontend
+# 🪴 EcoTrack - frontend
 
 **Nombre completo:** Angelica Bohorquez Rozo  
 **Entrega 6:** BIT-BACKEND  
